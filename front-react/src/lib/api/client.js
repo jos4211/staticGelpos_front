@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const client = axios.create();
+const client = axios.create({
+  baseURL: "https://gelposserver.herokuapp.com/",
+});
 
 // client.defaults.baseURL = "";
 
