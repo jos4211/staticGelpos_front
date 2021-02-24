@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "https://gelposserver.herokuapp.com/"
-  force = true
-  signed = "access_token"
