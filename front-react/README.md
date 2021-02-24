@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# 사이트 링크
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [ Gelpos사이트](https://gelpos.netlify.app/)
+- [ GelposBackend](https://github.com/jos4211/staticGelpos_backend)
 
-## Available Scripts
+# 개인 프로젝트 기획 배경
 
-In the project directory, you can run:
+기존에 프로젝트로 개발했던 Gelpos를 가지고 정적페이지로 만들어 netlify와 heroku를 이용해 배포하고 싶어 개발하게 되었습니다.
 
-### `yarn start`
+# 배포 방법
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- FrontEnd-netlify
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  - netlify를 이용해 git과 연결해 staticGelpos_front에 업데이트를 하면 자동으로 build를 하여 배포하게 개발 하였습니다.
 
-### `yarn test`
+- BackEnd-heroku
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - heroku를 이용해 git과 연결해 staticGelpos_backend에 업데이트를 하면 자동으로 build를 하여 배포하게 개발 하였습니다.
 
-### `yarn build`
+- Database
+  - mongoDB Atlas를 서버와 연결하여 회원정보, 가게정보, 스케줄, 테이블 데이터를 저장하고 사용할 수 있게 개발 하였습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 회원가입 방법
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 이메일 인증
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `yarn eject`
+편의를 위해 f12 개발자 화면 console에 코드 번호를 띄어 코드번호 확인 가능합니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+실제 이메일을 입력하지 않아도 됩니다.(실제 코드번호는 전송 됩니다.)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# 기능
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
 
-## Learn More
+모든 기능을 구현하고 싶었지만 정적페이지 특성상 soket.io 구현이 힘들어서 테이블 기능에 있는
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+soket.io기능을 일반 REST통신을 통해 구현할 예정입니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
