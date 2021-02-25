@@ -4,7 +4,7 @@ import Scheduler from "./Scheduler";
 import StoreAdd from "./StoreAdd/StoreAddContainer";
 import Invoice from "./Invoice/Invoice";
 import StoreInfo from "./StoreInfo";
-//import Table from "./Table/TableContainer";
+import Table from "./Table/TableContainer";
 //import TableDetail from "./Table/TableDetail";
 
 //import SocketProvider from "./context/socket";
@@ -39,8 +39,8 @@ export default function SidebarContainer({ history }) {
       <Route path="/store/scheduler" component={Scheduler} />
       <Route path="/store/storeAdd" component={StoreAdd} />
       <Route path="/store/invoice" component={Invoice} />
-      {/* <Route path="/store" exact component={Table} /> */}
-      {/* <Route path="/store/table" component={Table} /> */}
+      <Route path="/store" exact component={Table} />
+      <Route path="/store/table" component={Table} />
       <Route path="/store/storeinfo" component={StoreInfo} />
       {/* <Route path="/store/tableDetail/:seq" component={TableDetail} /> */}
     </Sidebar>

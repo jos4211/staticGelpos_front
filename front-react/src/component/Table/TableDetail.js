@@ -3,7 +3,6 @@ import { useEffect, useState, useContext } from "react";
 import TableOrderList from "./TableOrderList";
 import TableMenuList from "./TableMenuList";
 import addComma from "../../utility/addComma";
-import SocketContext from "../context/socket/context";
 import {
   onModifyTable,
   getOneTable,
